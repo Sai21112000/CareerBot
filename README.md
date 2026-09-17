@@ -6,6 +6,7 @@
 [![MCP](https://img.shields.io/badge/Protocol-MCP-818CF8)](https://modelcontextprotocol.io/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-22C55E.svg)](LICENSE)
 [![Status: Alpha](https://img.shields.io/badge/Status-Alpha-F59E0B.svg)](#current-limitations)
+[![Website](https://img.shields.io/badge/Website-GitHub_Pages-5EE7F2)](https://sai21112000.github.io/CareerBot/)
 
 </div>
 
