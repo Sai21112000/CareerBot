@@ -1,0 +1,39 @@
+{
+  "version": "1.0.0",
+  "default_mode": "review",
+  "connectors": {
+    "linkedin": {
+      "mode": "manual_handoff",
+      "reason": "Applicant-side automation is restricted."
+    },
+    "jobsdb_seek": {
+      "mode": "manual_handoff",
+      "reason": "Candidate auto-submission is unsupported without an approved partner integration."
+    },
+    "jobthai": {
+      "mode": "manual_handoff",
+      "reason": "No authorized candidate submission API is configured."
+    },
+    "workventure": {
+      "mode": "manual_handoff",
+      "reason": "No authorized candidate submission API is configured."
+    },
+    "jobtopgun": {
+      "mode": "manual_handoff",
+      "reason": "No authorized candidate submission API is configured."
+    },
+    "jobbkk": {
+      "mode": "manual_handoff",
+      "reason": "No authorized candidate submission API is configured."
+    },
+    "authorized_api_template": {
+      "mode": "review",
+      "replay_tests_passed": true,
+      "supervised_successes": 0,
+      "minimum_supervised_successes": 2,
+      "duplicate_prevention_verified": true,
+      "field_mapping_verified": false,
+      "auto_eligible": false
+    }
+  }
+}

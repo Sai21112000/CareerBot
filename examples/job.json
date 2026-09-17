@@ -1,0 +1,10 @@
+{
+  "external_id": "example-001",
+  "company": "Example Geospatial Co",
+  "role": "Applied AI Engineer",
+  "description": "Fictional example role requiring Python, computer vision, geospatial analysis, and production machine learning. Work-authorization support must be confirmed.",
+  "url": "https://example.com/jobs/applied-ai-engineer",
+  "location": "Bangkok, Thailand",
+  "source": "manual-example",
+  "sponsorship": "unknown"
+}

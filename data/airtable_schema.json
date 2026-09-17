@@ -1,0 +1,83 @@
+{
+  "version": "1.0.0",
+  "tables": {
+    "Jobs": {
+      "primary_field": "fingerprint",
+      "fields": [
+        "fingerprint",
+        "company",
+        "role",
+        "job_url",
+        "location",
+        "source",
+        "description",
+        "sponsorship",
+        "fit_score",
+        "recommendation",
+        "discovered_at",
+        "source_hash",
+        "resume_drive_url",
+        "cover_letter_drive_url"
+      ]
+    },
+    "Applications": {
+      "primary_field": "idempotency_key",
+      "fields": [
+        "idempotency_key",
+        "date_applied",
+        "company",
+        "role",
+        "job_url",
+        "snapshot_path",
+        "resume_version_note",
+        "status",
+        "applied_via",
+        "follow_up_date",
+        "confirmation_id",
+        "submitted_answers",
+        "updated_at",
+        "resume_drive_url",
+        "cover_letter_drive_url"
+      ]
+    },
+    "Contacts": {
+      "primary_field": "contact_key",
+      "fields": [
+        "contact_key",
+        "name",
+        "company",
+        "role",
+        "email",
+        "profile_url",
+        "source",
+        "last_contacted_at"
+      ]
+    },
+    "Activities": {
+      "primary_field": "activity_id",
+      "fields": [
+        "activity_id",
+        "application_key",
+        "type",
+        "occurred_at",
+        "summary",
+        "external_id",
+        "status"
+      ]
+    },
+    "Agent Runs": {
+      "primary_field": "run_id",
+      "fields": [
+        "run_id",
+        "started_at",
+        "completed_at",
+        "profile",
+        "jobs_seen",
+        "applications_prepared",
+        "applications_submitted",
+        "handoffs",
+        "errors"
+      ]
+    }
+  }
+}

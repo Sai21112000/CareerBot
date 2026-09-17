@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">CareerBot system architecture</title>
+  <desc id="desc">Clients connect through CLI or MCP to CareerBot modules, which use optional xAI, Airtable, Google, and Tectonic integrations while keeping private data local.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1220"/>
+      <stop offset="1" stop-color="#101a33"/>
+    </linearGradient>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0 0 L9 3 L0 6 Z" fill="#64748b"/>
+    </marker>
+  </defs>
+  <rect width="1200" height="720" rx="24" fill="url(#bg)"/>
+  <text x="60" y="62" fill="#f8fafc" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="30" font-weight="800">CareerBot architecture</text>
+  <text x="60" y="91" fill="#94a3b8" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="16">Narrow tools, private sources, explicit external boundaries</text>
+
+  <g font-family="Inter,Segoe UI,Arial,sans-serif">
+    <text x="60" y="142" fill="#67e8f9" font-size="15" font-weight="800" letter-spacing="2">CLIENTS</text>
+    <g transform="translate(60 162)">
+      <rect width="205" height="82" rx="14" fill="#122138" stroke="#0891b2"/>
+      <text x="102" y="34" text-anchor="middle" fill="#e0f2fe" font-size="17" font-weight="700">CareerBot CLI</text>
+      <text x="102" y="58" text-anchor="middle" fill="#94a3b8" font-size="13">local bounded commands</text>
+    </g>
+    <g transform="translate(60 261)">
+      <rect width="205" height="82" rx="14" fill="#122138" stroke="#0891b2"/>
+      <text x="102" y="34" text-anchor="middle" fill="#e0f2fe" font-size="17" font-weight="700">Cursor</text>
+      <text x="102" y="58" text-anchor="middle" fill="#94a3b8" font-size="13">stdio MCP</text>
+    </g>
+    <g transform="translate(60 360)">
+      <rect width="205" height="92" rx="14" fill="#122138" stroke="#0891b2"/>
+      <text x="102" y="34" text-anchor="middle" fill="#e0f2fe" font-size="17" font-weight="700">Remote MCP client</text>
+      <text x="102" y="58" text-anchor="middle" fill="#94a3b8" font-size="13">HTTPS + bearer token</text>
+      <text x="102" y="76" text-anchor="middle" fill="#94a3b8" font-size="12">tool allowlist recommended</text>
+    </g>
+
+    <path d="M265 203 H330 M265 302 H330 M265 406 H330" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)"/>
+
+    <text x="330" y="142" fill="#a5b4fc" font-size="15" font-weight="800" letter-spacing="2">CAREERBOT RUNTIME</text>
+    <rect x="330" y="162" width="480" height="411" rx="20" fill="#121a32" stroke="#6366f1" stroke-width="2"/>
+    <rect x="355" y="187" width="430" height="62" rx="12" fill="#1e1b4b" stroke="#818cf8"/>
+    <text x="570" y="214" text-anchor="middle" fill="#e0e7ff" font-size="18" font-weight="800">FastMCP server</text>
+    <text x="570" y="236" text-anchor="middle" fill="#a5b4fc" font-size="13">12 scoped tools · stdio / Streaming HTTP / SSE</text>
+
+    <g font-size="14" font-weight="700">
+      <g transform="translate(355 270)"><rect width="132" height="63" rx="12" fill="#172554" stroke="#3b82f6"/><text x="66" y="28" text-anchor="middle" fill="#dbeafe">Discovery</text><text x="66" y="47" text-anchor="middle" fill="#93c5fd" font-size="11">normalize + rank</text></g>
+      <g transform="translate(504 270)"><rect width="132" height="63" rx="12" fill="#172554" stroke="#3b82f6"/><text x="66" y="28" text-anchor="middle" fill="#dbeafe">Scoring</text><text x="66" y="47" text-anchor="middle" fill="#93c5fd" font-size="11">CV-grounded</text></g>
+      <g transform="translate(653 270)"><rect width="132" height="63" rx="12" fill="#172554" stroke="#3b82f6"/><text x="66" y="28" text-anchor="middle" fill="#dbeafe">Strategy</text><text x="66" y="47" text-anchor="middle" fill="#93c5fd" font-size="11">role priorities</text></g>
+      <g transform="translate(355 350)"><rect width="132" height="63" rx="12" fill="#12352f" stroke="#10b981"/><text x="66" y="28" text-anchor="middle" fill="#d1fae5">Tailoring</text><text x="66" y="47" text-anchor="middle" fill="#6ee7b7" font-size="11">verified claims</text></g>
+      <g transform="translate(504 350)"><rect width="132" height="63" rx="12" fill="#12352f" stroke="#10b981"/><text x="66" y="28" text-anchor="middle" fill="#d1fae5">Validation</text><text x="66" y="47" text-anchor="middle" fill="#6ee7b7" font-size="11">ATS + one page</text></g>
+      <g transform="translate(653 350)"><rect width="132" height="63" rx="12" fill="#12352f" stroke="#10b981"/><text x="66" y="28" text-anchor="middle" fill="#d1fae5">Snapshots</text><text x="66" y="47" text-anchor="middle" fill="#6ee7b7" font-size="11">SHA-256 manifest</text></g>
+      <g transform="translate(355 430)"><rect width="205" height="63" rx="12" fill="#3b2512" stroke="#f59e0b"/><text x="102" y="28" text-anchor="middle" fill="#fef3c7">Submission policy</text><text x="102" y="47" text-anchor="middle" fill="#fcd34d" font-size="11">hard stops + handoffs</text></g>
+      <g transform="translate(580 430)"><rect width="205" height="63" rx="12" fill="#3b2512" stroke="#f59e0b"/><text x="102" y="28" text-anchor="middle" fill="#fef3c7">Tracking</text><text x="102" y="47" text-anchor="middle" fill="#fcd34d" font-size="11">idempotent records</text></g>
+    </g>
+    <rect x="355" y="516" width="430" height="36" rx="10" fill="#2a1622" stroke="#f43f5e"/>
+    <text x="570" y="539" text-anchor="middle" fill="#fecdd3" font-size="13" font-weight="700">No built-in job-portal submission connector</text>
+
+    <path d="M810 215 H875 M810 310 H875 M810 405 H875 M810 500 H875" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)"/>
+    <text x="875" y="142" fill="#f9a8d4" font-size="15" font-weight="800" letter-spacing="2">INTEGRATIONS</text>
+    <g transform="translate(875 162)"><rect width="265" height="82" rx="14" fill="#29172a" stroke="#ec4899"/><text x="132" y="33" text-anchor="middle" fill="#fce7f3" font-size="17" font-weight="700">xAI / Grok</text><text x="132" y="57" text-anchor="middle" fill="#f9a8d4" font-size="13">strategy, scoring, drafting</text></g>
+    <g transform="translate(875 261)"><rect width="265" height="82" rx="14" fill="#29172a" stroke="#ec4899"/><text x="132" y="33" text-anchor="middle" fill="#fce7f3" font-size="17" font-weight="700">Airtable</text><text x="132" y="57" text-anchor="middle" fill="#f9a8d4" font-size="13">optional workflow database</text></g>
+    <g transform="translate(875 360)"><rect width="265" height="82" rx="14" fill="#29172a" stroke="#ec4899"/><text x="132" y="33" text-anchor="middle" fill="#fce7f3" font-size="17" font-weight="700">Tectonic</text><text x="132" y="57" text-anchor="middle" fill="#f9a8d4" font-size="13">local LaTeX to PDF</text></g>
+    <g transform="translate(875 459)"><rect width="265" height="92" rx="14" fill="#29172a" stroke="#ec4899"/><text x="132" y="32" text-anchor="middle" fill="#fce7f3" font-size="17" font-weight="700">Google API adapters</text><text x="132" y="56" text-anchor="middle" fill="#f9a8d4" font-size="13">optional library extension</text><text x="132" y="74" text-anchor="middle" fill="#f9a8d4" font-size="12">not a complete CLI workflow</text></g>
+
+    <text x="330" y="623" fill="#86efac" font-size="15" font-weight="800" letter-spacing="2">PRIVATE LOCAL DATA</text>
+    <rect x="330" y="643" width="810" height="46" rx="12" fill="#102820" stroke="#22c55e"/>
+    <text x="735" y="672" text-anchor="middle" fill="#bbf7d0" font-size="14">Master CV · resume · career strategy · application ledger · immutable snapshots · platform queues</text>
+    <path d="M570 573 V643" stroke="#22c55e" stroke-width="2" marker-end="url(#arrow)"/>
+  </g>
+</svg>

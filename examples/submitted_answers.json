@@ -1,0 +1,9 @@
+{
+  "_notice": "Fictional placeholders only. Review every answer before use.",
+  "work_authorization": "REQUIRES_USER_INPUT",
+  "requires_sponsorship": "REQUIRES_USER_INPUT",
+  "salary_expectation": "REQUIRES_USER_INPUT",
+  "available_start_date": "REQUIRES_USER_INPUT",
+  "portfolio_url": "REQUIRES_USER_INPUT",
+  "declaration_accepted": "REQUIRES_USER_CONFIRMATION"
+}

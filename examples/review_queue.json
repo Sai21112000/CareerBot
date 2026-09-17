@@ -1,0 +1,18 @@
+{
+  "generated_at": "2026-09-09T00:00:00Z",
+  "profile": "dry_run",
+  "jobs": [
+    {
+      "external_id": "example-001",
+      "company": "Example Geospatial Co",
+      "role": "Applied AI Engineer",
+      "url": "https://example.com/jobs/applied-ai-engineer",
+      "recommendation": "apply_with_caveats",
+      "caveats": [
+        "Fictional example only",
+        "Confirm work-authorization support",
+        "Verify every claimed qualification against the private master resume"
+      ]
+    }
+  ]
+}

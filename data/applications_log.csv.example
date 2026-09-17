@@ -1,0 +1,2 @@
+idempotency_key,date_applied,company,role,job_url,snapshot_path,resume_version_note,status,applied_via,follow_up_date,confirmation_id,submitted_answers,updated_at
+example-ai-engineer,2026-01-15,Example Company,Applied AI Engineer,https://example.com/jobs/ai-engineer,snapshots/example-ai-engineer,Emphasized verified agent and retrieval experience,prepared,company portal,2026-01-22,,{},2026-01-15T12:00:00Z

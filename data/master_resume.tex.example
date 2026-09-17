@@ -1,0 +1,56 @@
+% EXAMPLE PLACEHOLDER ONLY
+% This file contains no claims about the candidate.
+% Copy it to data/master_resume.tex, then replace every [VERIFIED ...] marker with
+% content checked against the real master resume and private master CV.
+% Never tailor or submit this placeholder.
+
+\documentclass[10pt,letterpaper]{article}
+\usepackage[margin=0.55in]{geometry}
+\usepackage[hidelinks]{hyperref}
+\usepackage{enumitem}
+\usepackage[T1]{fontenc}
+\pagenumbering{gobble}
+\setlength{\parindent}{0pt}
+\setlist[itemize]{leftmargin=*,nosep}
+
+\begin{document}
+
+{\Large \textbf{[VERIFIED FULL NAME]}}\\
+{[VERIFIED CITY, COUNTRY]} \textbar{}
+\href{mailto:placeholder@example.com}{[VERIFIED EMAIL]} \textbar{}
+[VERIFIED PHONE] \textbar{}
+\href{https://example.com}{[VERIFIED PORTFOLIO OR LINKEDIN]}
+
+\section*{Summary}
+[VERIFIED PROFESSIONAL SUMMARY. Use only facts supported by the master CV.]
+
+\section*{Skills}
+\textbf{Languages:} [VERIFIED LANGUAGES]\\
+\textbf{Machine Learning:} [VERIFIED FRAMEWORKS AND METHODS]\\
+\textbf{Cloud and Tools:} [VERIFIED CLOUD SERVICES AND TOOLS]
+
+\section*{Experience}
+\textbf{[VERIFIED JOB TITLE]} \hfill [VERIFIED START DATE -- END DATE]\\
+{[VERIFIED EMPLOYER], [VERIFIED LOCATION]}
+\begin{itemize}
+  \item [VERIFIED RESPONSIBILITY OR OUTCOME]
+  \item [VERIFIED METRIC AND CONTEXT, ONLY IF PRESENT IN SOURCE]
+\end{itemize}
+
+\section*{Projects}
+\textbf{[VERIFIED PROJECT NAME]} \hfill [VERIFIED DATE RANGE]
+\begin{itemize}
+  \item [VERIFIED PROBLEM, METHOD, AND RESULT]
+\end{itemize}
+
+\section*{Thesis}
+\textbf{[VERIFIED THESIS TITLE]} \hfill [VERIFIED DATE RANGE]
+\begin{itemize}
+  \item [VERIFIED RESEARCH SCOPE, METHODS, AND RESULT]
+\end{itemize}
+
+\section*{Education}
+\textbf{[VERIFIED DEGREE]} \hfill [VERIFIED START DATE -- END DATE]\\
+{[VERIFIED INSTITUTION], [VERIFIED LOCATION]}
+
+\end{document}

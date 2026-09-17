@@ -1,0 +1,37 @@
+# CareerBot Operator Context
+
+Copy this file to `AGENTS.md` and replace bracketed values. `AGENTS.md` is ignored because it may
+contain private identity, work-authorization, salary, and application details.
+
+## Candidate
+
+- Location: `[CITY, COUNTRY]`
+- Graduation or availability date: `[DATE]`
+- Work-authorization constraints: `[PRIVATE CONSTRAINTS]`
+- Target roles: `[EXACT ATS JOB TITLES]`
+- Priority markets: `[LOCATIONS OR REMOTE REGIONS]`
+- Session constraints: `[TIME, JOB, APPLICATION, AND COST LIMITS]`
+
+## Resume sources
+
+- Keep verified private resume files outside Git or in ignored paths.
+- Treat the master CV and selected resume files as the only sources of factual experience.
+- Never invent employment, clients, production deployments, metrics, credentials, or completed
+  projects.
+- Label hypothetical portfolio work `Proposed`, `Planned`, or `In Progress`.
+
+## Application policy
+
+- Never submit without the operator's explicit approval for the specific job or named batch.
+- Check the application ledger for duplicates before preparing or submitting.
+- Hand off salary, legal declarations, CAPTCHA, MFA, identity verification, and unanswered
+  work-authorization questions.
+- Do not scrape or automate a platform when its terms prohibit it.
+- Log submitted artifacts, answers, source URL, and confirmation evidence without storing secrets.
+
+## Platform workflow
+
+- Define an explicit platform order for each session.
+- Work one platform at a time.
+- Keep platform-specific queues and logs under `workspaces/<platform>/`.
+- Use bounded, resumable runs and stop at configured limits.
