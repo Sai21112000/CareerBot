@@ -42,7 +42,7 @@
         </button>
 
         <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
-          <a href="#capabilities">Capabilities</a>
+          <a href="#capabilities">Overview</a>
           <a href="#architecture">Architecture</a>
           <a href="#safety">Safety</a>
           <a href="#quick-start">Quick start</a>
@@ -61,12 +61,8 @@
 
     <main id="main">
       <section id="top" class="hero section-shell">
-        <div class="hero-glow hero-glow-one" aria-hidden="true"></div>
-        <div class="hero-glow hero-glow-two" aria-hidden="true"></div>
-
         <div class="hero-copy">
-          <p class="eyebrow"><span></span> Open-source Python + MCP toolkit</p>
-          <h1>Move faster.<br><em>Keep the evidence.</em></h1>
+          <h1>Bounded prep.<br>Auditable.</h1>
           <p class="hero-lede">
             CareerBot scores job fit, prepares verified application artifacts, preserves
             immutable snapshots, and stops at the boundaries that need a human.
@@ -82,43 +78,24 @@
               Explore the repository
             </a>
           </div>
-          <ul class="hero-points" aria-label="Project highlights">
-            <li><span aria-hidden="true">✓</span> Verified claims only</li>
-            <li><span aria-hidden="true">✓</span> Bounded sessions</li>
-            <li><span aria-hidden="true">✓</span> Human approval gates</li>
-          </ul>
+          <p class="hero-points-text">Verified claims only · Bounded sessions · Human approval gates</p>
         </div>
 
-        <div class="hero-terminal" aria-label="Terminal showing how to clone CareerBot">
-          <div class="terminal-bar">
-            <div class="terminal-dots" aria-hidden="true"><i></i><i></i><i></i></div>
-            <span>Terminal</span>
-            <button
-              class="copy-button copy-button-small"
-              type="button"
-              data-copy-target="hero-command"
-              aria-label="Copy clone command"
-            >
-              Copy
-            </button>
-          </div>
-          <div class="terminal-body">
-            <p class="terminal-comment"># Clone the open-source project</p>
-            <code id="hero-command"><span>$</span> git clone https://github.com/Sai21112000/CareerBot.git</code>
-            <code><span>$</span> cd CareerBot</code>
-            <code><span>$</span> uv sync --extra dev</code>
-            <div class="terminal-result">
-              <span class="pulse-dot" aria-hidden="true"></span>
-              <span>Ready for a bounded dry run</span>
-            </div>
-          </div>
-        </div>
+        <figure class="hero-media">
+          <img
+            src="assets/writing-a-letter-of-resignation.jpg"
+            width="1920"
+            height="1280"
+            alt="Hands writing a letter at a desk; CareerBot prepares artifacts and keeps evidence."
+            decoding="async"
+          >
+        </figure>
       </section>
 
       <section class="trust-strip" aria-label="Technology overview">
         <div class="section-shell trust-grid">
           <div><strong>Python 3.12</strong><span>Typed runtime</span></div>
-          <div><strong>12 MCP tools</strong><span>Focused interfaces</span></div>
+          <div><strong>12 MCP tools</strong><span>Scoped interfaces</span></div>
           <div><strong>SHA-256</strong><span>Artifact manifests</span></div>
           <div><strong>MIT</strong><span>Open source</span></div>
         </div>
@@ -126,62 +103,42 @@
 
       <section id="capabilities" class="content-section section-shell">
         <div class="section-heading">
-          <p class="eyebrow"><span></span> Capabilities</p>
-          <h2>A clear path from job input to review-ready package.</h2>
+          <h2>From input to a review‑ready package.</h2>
           <p>
             Each module does one job and leaves behind inspectable state, so a workflow can stop,
             resume, or hand control back without losing context.
           </p>
         </div>
 
-        <div class="feature-grid">
-          <article class="feature-card feature-card-wide">
-            <span class="feature-number">01</span>
-            <div class="feature-icon" aria-hidden="true">⌁</div>
+        <ul class="features">
+          <li>
             <h3>Normalize and rank</h3>
             <p>Deduplicate supplied jobs and prioritize the bounded input set before model calls.</p>
-            <span class="feature-tag">Local first</span>
-          </article>
-          <article class="feature-card">
-            <span class="feature-number">02</span>
-            <div class="feature-icon" aria-hidden="true">◎</div>
+          </li>
+          <li>
             <h3>Score against evidence</h3>
-            <p>Compare requirements with a private, hash-verified Master CV using xAI.</p>
-            <span class="feature-tag">CV-grounded</span>
-          </article>
-          <article class="feature-card">
-            <span class="feature-number">03</span>
-            <div class="feature-icon" aria-hidden="true">▤</div>
+            <p>Compare requirements with a private, hash‑verified Master CV using xAI.</p>
+          </li>
+          <li>
             <h3>Prepare artifacts</h3>
             <p>Draft positioning, LaTeX resumes, and concise letters from verified facts.</p>
-            <span class="feature-tag">ATS checked</span>
-          </article>
-          <article class="feature-card">
-            <span class="feature-number">04</span>
-            <div class="feature-icon" aria-hidden="true">◇</div>
+          </li>
+          <li>
             <h3>Preserve snapshots</h3>
-            <p>Save immutable application packages with file sizes and SHA-256 manifests.</p>
-            <span class="feature-tag">Auditable</span>
-          </article>
-          <article class="feature-card feature-card-wide">
-            <span class="feature-number">05</span>
-            <div class="feature-icon" aria-hidden="true">✓</div>
+            <p>Save immutable packages with file sizes and SHA‑256 manifests.</p>
+          </li>
+          <li>
             <h3>Track without guessing</h3>
-            <p>
-              Record prepared and submitted state locally, with optional Airtable tracking and
-              explicit confirmation evidence.
-            </p>
-            <span class="feature-tag">Idempotent</span>
-          </article>
-        </div>
+            <p>Record prepared/submitted state locally, with optional Airtable tracking.</p>
+          </li>
+        </ul>
       </section>
 
       <section id="architecture" class="content-section architecture-section">
         <div class="section-shell">
           <div class="section-heading heading-row">
             <div>
-              <p class="eyebrow"><span></span> Architecture</p>
-              <h2>Narrow tools. Private sources. Explicit boundaries.</h2>
+              <h2>Narrow tools. Clear bounds.</h2>
             </div>
             <p>
               Use the CLI directly, connect Cursor over stdio MCP, or expose a protected remote
@@ -202,17 +159,16 @@
 
       <section id="safety" class="content-section section-shell safety-layout">
         <div class="safety-copy">
-          <p class="eyebrow"><span></span> Safety by design</p>
-          <h2>Automation has a boundary. CareerBot makes it visible.</h2>
+          <h2>Automation has boundaries.</h2>
           <p>
             The project ships preparation, policy assessment, and handoff logic—not a default
             job-board auto-submit connector.
           </p>
-          <div class="boundary-list">
-            <div><span>01</span><p><strong>No hidden experience</strong>Generated claims stay inside verified CV evidence.</p></div>
-            <div><span>02</span><p><strong>No bypasses</strong>CAPTCHA, MFA, identity, consent, and declarations require a handoff.</p></div>
-            <div><span>03</span><p><strong>No unbounded runs</strong>Job, application, and elapsed-time limits are configurable.</p></div>
-          </div>
+          <ul class="points">
+            <li><strong>No hidden experience.</strong> Generated claims stay inside verified CV evidence.</li>
+            <li><strong>No bypasses.</strong> CAPTCHA, MFA, identity, consent, and declarations require a handoff.</li>
+            <li><strong>No unbounded runs.</strong> Job, application, and elapsed‑time limits are configurable.</li>
+          </ul>
         </div>
         <figure class="workflow-frame">
           <img
@@ -228,8 +184,7 @@
       <section class="mcp-section">
         <div class="section-shell mcp-layout">
           <div>
-            <p class="eyebrow"><span></span> Model Context Protocol</p>
-            <h2>Use CareerBot where you already work.</h2>
+            <h2>Works in MCP.</h2>
             <p>
               Twelve scoped tools cover strategy, discovery, scoring, artifact generation,
               snapshots, tracking, and submission policy.
@@ -241,21 +196,43 @@
               rel="noreferrer"
             >Read the MCP setup <span aria-hidden="true">→</span></a>
           </div>
-          <div class="tool-cloud" aria-label="CareerBot MCP tools">
-            <span>score_job</span>
-            <span>search_jobs</span>
-            <span>tailor_resume</span>
-            <span>verify_snapshot</span>
-            <span>assess_submission</span>
-            <span>track_application</span>
-            <span>consult_career_positioning</span>
-          </div>
+          <ul class="tool-list" aria-label="CareerBot MCP tools">
+            <li>consult_career_positioning</li>
+            <li>save_career_strategy</li>
+            <li>get_career_strategy</li>
+            <li>search_jobs</li>
+            <li>score_job</li>
+            <li>tailor_resume</li>
+            <li>generate_cover_letter</li>
+            <li>save_application_snapshot</li>
+            <li>verify_snapshot</li>
+            <li>track_application</li>
+            <li>submission_hard_stops</li>
+            <li>assess_submission</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="content-section section-shell gallery">
+        <div class="section-heading">
+          <h2>Work in the open. Keep a record.</h2>
+          <p>Real pictures of the craft around applications — letters, desks, and the tools of writing.</p>
+        </div>
+        <div class="gallery-grid">
+          <figure>
+            <img src="assets/olympia-simplex.jpg" width="1920" height="1280" alt="Olympia Simplex typewriter from 1935" loading="lazy" decoding="async">
+          </figure>
+          <figure>
+            <img src="assets/typewriter-12-hg.jpg" width="1920" height="1403" alt="Franklin round-keyboard typewriter, c. 1893" loading="lazy" decoding="async">
+          </figure>
+          <figure>
+            <img src="assets/cover-for-coleccion-de-cartas-amorosas-cuaderno.jpg" width="1920" height="1474" alt="Early 1900s print of a young woman writing a letter at a desk" loading="lazy" decoding="async">
+          </figure>
         </div>
       </section>
 
       <section id="quick-start" class="content-section section-shell quick-start">
         <div class="section-heading">
-          <p class="eyebrow"><span></span> Quick start</p>
           <h2>Clone it. Keep your private data private.</h2>
           <p>
             Start with fictional inputs and a dry-run profile. Private resumes, credentials,
@@ -264,12 +241,12 @@
         </div>
 
         <div class="setup-grid">
-          <div class="setup-steps">
-            <div><span>1</span><p><strong>Clone the repository</strong>Get the code directly from GitHub.</p></div>
-            <div><span>2</span><p><strong>Install dependencies</strong>Use uv with Python 3.12 or newer.</p></div>
-            <div><span>3</span><p><strong>Create private files</strong>Copy the safe examples and replace verified placeholders.</p></div>
-            <div><span>4</span><p><strong>Run locally</strong>Inspect the CLI before adding external integrations.</p></div>
-          </div>
+          <ol class="setup-steps-ol">
+            <li><strong>Clone the repository.</strong> Get the code directly from GitHub.</li>
+            <li><strong>Install dependencies.</strong> Use uv with Python 3.12 or newer.</li>
+            <li><strong>Create private files.</strong> Copy the safe examples and replace verified placeholders.</li>
+            <li><strong>Run locally.</strong> Inspect the CLI before adding external integrations.</li>
+          </ol>
 
           <div class="code-card">
             <div class="code-card-header">
@@ -296,8 +273,7 @@ uv run careerbot --help</code></pre>
 
       <section class="final-cta section-shell">
         <div>
-          <p class="eyebrow"><span></span> Build your bounded workflow</p>
-          <h2>Open source. Inspectable. Ready to clone.</h2>
+          <h2>Open source. Ready to clone.</h2>
         </div>
         <div class="final-actions">
           <a
@@ -321,6 +297,9 @@ uv run careerbot --help</code></pre>
         <div class="footer-links">
           <a href="https://github.com/Sai21112000/CareerBot">GitHub</a>
           <a href="https://github.com/Sai21112000/CareerBot/blob/main/LICENSE">MIT License</a>
+        </div>
+        <div class="footer-credits">
+          <p class="credits">Pictures: <a href="https://commons.wikimedia.org/wiki/File:Olympia_Simplex.jpg">“Olympia Simplex”</a> by Sammlung der Medien und Wissenschaft, <a href="https://creativecommons.org/licenses/by/4.0">CC BY 4.0</a>, via Wikimedia Commons; <a href="https://commons.wikimedia.org/wiki/File:Typewriter-12_hg.jpg">“Typewriter-12 hg”</a> by Hannes Grobe, <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>, via Wikimedia Commons; <a href="https://commons.wikimedia.org/wiki/File:Cover_for_%27Coleccion_de_Cartas_Amorosas_Cuaderno_No._6%27,_a_young_woman_writing_a_letter_at_a_desk_MET_DP868379.jpg">“Cover for ' Coleccion de Cartas Amorosas Cuaderno No. 6 ' , a young woman writing a lette…”</a> by José Guadalupe Posada / Antonio Vanegas Arroyo, <a href="https://creativecommons.org/publicdomain/zero/1.0/deed.en">CC0</a>, via Wikimedia Commons; <a href="https://commons.wikimedia.org/wiki/File:Writing_a_Letter_of_Resignation.jpg">“Writing a Letter of Resignation”</a> by CIPHR Connect, <a href="https://creativecommons.org/licenses/by/2.0">CC BY 2.0</a>, via Wikimedia Commons.</p>
         </div>
       </div>
     </footer>

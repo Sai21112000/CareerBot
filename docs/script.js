@@ -62,3 +62,26 @@ document.querySelectorAll("[data-copy-target]").forEach((button) => {
     }, 1800);
   });
 });
+
+// reveal on scroll (reduced-motion safe)
+const prefersReduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+const revealTargets = [
+  ...document.querySelectorAll("h2"),
+  ...document.querySelectorAll(".features li"),
+  ...document.querySelectorAll(".diagram-frame, .workflow-frame"),
+  ...document.querySelectorAll(".tool-list li"),
+  ...document.querySelectorAll(".gallery-grid figure"),
+  ...document.querySelectorAll(".final-cta"),
+];
+if (prefersReduced) {
+  revealTargets.forEach((el) => el.classList.add("is-visible"));
+} else {
+  revealTargets.forEach((el) => el.classList.add("reveal"));
+  const io = new IntersectionObserver(
+    (entries) => {
+      for (const e of entries) if (e.isIntersecting) e.target.classList.add("is-visible");
+    },
+    { rootMargin: "0px 0px -10% 0px", threshold: 0.15 }
+  );
+  revealTargets.forEach((el) => io.observe(el));
+}
