@@ -12,6 +12,8 @@
 
 </div>
 
+![Website preview — desktop](docs/assets/site-desktop.jpg)
+
 # CareerBot
 
 CareerBot is an open-source Python and MCP toolkit for scoring job fit, preparing verified
